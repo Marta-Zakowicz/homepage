@@ -10,23 +10,23 @@
 </head>
 
 <body>
-    <header id="back">
+    <section id="back" class="navigation">
         <nav>
-            <a href="index.html">Strona główna</a>
+            <a class="navigation navigation__link" href="index.html">Strona główna</a>
             <a href="nauka-html.html">Nauka html</a>
             <a href="nauka-css.html">Nauka css</a>
         </nav>
 
-    </header>
-    <main >
-
+    </section>
+    <main class="page" >
+<div class="page__image"> 
         <img src="img1.jpg" alt="klawiatury" />
-      
+    </div>
       <header >          
-        <h1 class="header-first"> <B>  Frontend - moje notatki z kursu  </B></h1>
+        <h1 class="page__title"> <B>  Frontend - moje notatki z kursu  </B></h1>
 
       </header>  
-        <P>
+        <P class="page__navigation">
             <a href="#CSS-notatki"> Przejdź do CSS</a><br>
             <a href="#HTML-notatki">Przejdź do HTMLa</a><br>
             <a href="#przydatne-linki">Przydatne linki</a><br>
@@ -34,9 +34,9 @@
 
 
 
-        <h1 class="header-first"> Tydzień I</h1>
+        <h2 class="page__header"> Tydzień I</h2>
         <article>
-            <h2 class="header-secend"> Skróty klawiatury</h2>
+            <h3 class="page-header__second"> Skróty klawiatury</h3>
             <p>
                 ctrl+z ->cofnij<br>
                 ctrl+f-> szukaj<br>
@@ -49,7 +49,7 @@
         </article>
 
         <article>
-            <h2 class="header-secend"> Tworzenie nowego HTMLa </h2>
+            <h3 class="page-header__second"> Tworzenie nowego HTMLa </h3>
             <p> w folderze dev zrób nowy folder<br>
                 otwórz go w visual studio code (open folder)<br>
                 kliknij na ikonkę obok nazwy foldera(new file)<br>
@@ -59,7 +59,7 @@
         </article>
 
         <article id="HTML-notatki">
-            <h2 class="header-yellow"> HTML zmienia treść </h2>
+            <h3 class="page-header__second"> HTML zmienia treść </h3>
             <p> MAIN - głowna część dokumentu (wszystko)<br>
                 SECTION - sekcje dokumentu (jak np. sekcja sport w gaziecie)<br>
                 ARTICLE - samodzielne treści (jak np. artykuł w gaziecie)<br>
@@ -71,7 +71,7 @@
         </article>
 
         <article id="CSS-notatki">
-            <h2 class="header-yellow">CSS - zmienia wygląd </h2>
+            <h3 class="page-header__second">CSS - zmienia wygląd </h3>
             <p> selektor {wartość: wartość;} np. h1{color: blue;}<br>
                 tworzenie linku ze stylami - tworzymy nowy folder (z lewej strony na panelu) i wrzucamy do tego
                 folderu kod ze stylem. W części główej w HEAD wpisujemy link do tego folderu LINK HREF<br>
@@ -81,7 +81,7 @@
 
 
         <article id="przydatne-linki">
-            <h2 class="header-secend"> Przydatne linki:</h2>
+            <h3 class="page-header__second"> Przydatne linki:</h3>
             <a href="http://www.trello.com">Trello</a><br>
             <a href="https://validator.w3.org/nu/#textarea">Validator</a><br>
             <a href="https://coolors.co/">Palety kolorów</a><br>
